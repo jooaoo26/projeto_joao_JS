@@ -2,17 +2,17 @@ var meuFormulario = document.getElementById("formulario");
 meuFormulario.addEventListener("submit", function(event) {
   event.preventDefault();
 
-  Adivinhacao();
+  adivinhacao();
 
 });
 
 
 
-function Adivinhacao(){
+function adivinhacao(){
 
 
 
-  let numero_secreto = 2;
+  let numero_secreto=2;
   let palpite = document.getElementById('palpite').value;
 
 do{
@@ -20,9 +20,8 @@ do{
      numero_secreto="Tente novamente.";
 }while {
         (palpite!=numero_secreto)
-        numero_secreto="Parabéns,você coneguiu!!";
-
+        numero_secreto="Parabéns,você conseguiu!!";
+}
 
 
   document.getElementById("resultado_letra").value = resultado_letra;
-}
