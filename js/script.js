@@ -2,25 +2,27 @@ var meuFormulario = document.getElementById("formulario");
 meuFormulario.addEventListener("submit", function(event) {
   event.preventDefault();
 
-  consoante();
+  Adivinhe();
 
 });
 
 
 
-function consoante(){
+function Adivinhe(){
 
 
 
-  let letra = document.getElementById('letra').value;
+  let numero_secreto =2;
+  let palpite = document.getElementById('palpite').value;
+
+do{
+  if (palpite!=numero_secreto)
+     numero_secreto="Tente novamente.";
+}while {
+        (palpite!=numero_secreto)
+        numero_secreto="Parabéns,você coneguiu!!";
 
 
-
-  if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
-    resultado_letra = `A letra '${letra}' é vogal`;
-  } else {
-    resultado_letra =`A letra '${letra}' é consoante`;
-  }
 
   document.getElementById("resultado_letra").value = resultado_letra;
 }
