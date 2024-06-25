@@ -24,4 +24,4 @@ do{
 }
 
 
-  document.getElementById("resultado_letra").value = resultado_letra;
+  document.getElementById("numero_secreto").value = numero_secreto;
